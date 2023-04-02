@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Triviagic</title>
+</head>
+
+<body>
+    <header>
+        <h1> <a href="../index.html">Triviagic</a></h1>
+    </header>
+
+    <section class="preguntas">
+
+        <div id="app"></div>
+
+        <!--Pregunta1-->
+        <div id="pregunta-1">
+
+            <div id="encabezado">
+                ¿Qué cantante es mexicana?
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1200px-Flag_of_Mexico.svg.png"
+                    alt="">
+
+            </div>
+            <br>
+            <div class="opcion" id="opcion1-1">
+                Shakira
+            </div>
+            <br>
+            <div class="opcion" id="opcion2-1">
+                Belinda
+            </div>
+            <br>
+            <div class="opcion" id="opcion3-1">
+                Rosalía
+            </div>
+
+            <!--prueba salto-->
+            <button>
+                <a href="#pregunta-2" class="ocultar-p1">Siguiente</a>
+            </button>
+
+        </div>
+
+        <!--Pregunta2-->
+        <div id="pregunta-2">
+
+            <div id="encabezado">
+                ¿Qué banda es argentina?
+                <img src="data:image/png;base64,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"
+                    alt="">
+
+            </div>
+            <br>
+            <div class="opcion" id="opcion1-2">
+                Miranda
+            </div>
+            <br>
+            <div class="opcion" id="opcion2-2">
+                Reik
+            </div>
+            <br>
+            <div class="opcion" id="opcion3-2">
+                La ley
+            </div>
+
+            <!--prueba salto-->
+            <button>
+                <a href="#pregunta-3" class="ocultar-p1">Siguiente</a>
+            </button>
+
+        </div>
+
+        <!--Pregunta3-->
+        <div id="pregunta-3">
+
+            <div id="encabezado">
+                ¿Qué cantante es colombiano?
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAG1BMVEX80RbOESYAOJP/1QkALpYAOpnQECKak2S0HEY9+LCrAAAA0klEQVR4nO3QsQGCABAAsRcE3X9i+r+WMhkhMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC852ebHNl+2OdiclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk5qLbf5sc7PNh81JOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSf1AFT1rxpYHfBPAAAAAElFTkSuQmCC"
+                    alt="">
+
+            </div>
+            <br>
+            <div class="opcion" id="opcion1-3">
+                Ricky Martín
+            </div>
+            <br>
+            <div class="opcion" id="opcion2-3">
+                Ricardo Arjona
+            </div>
+            <br>
+            <div class="opcion" id="opcion3-3">
+                Juanes
+            </div>
+            <button id="resultados"> <a href="resultados.html">Ver Resultados</a></button>
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+    </section>
+    <script src="../js/preguntas-pop.js"></script>
+    <!--EMPIEZAN PREGUNTAS-->
+</body>
+
+</html>
